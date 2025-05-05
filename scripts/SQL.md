@@ -14,6 +14,11 @@
         - [RIGHT JOIN](#right-join)
         - [FULL OUTER JOIN](#full-outer-join)
         - [Rows without intersection](#rows-without-intersection)
+    - [What is a subquery?](#what-is-a-subquery)
+    - [Difference between UNION and UNION ALL?](#difference-between-union-and-union-all)
+    - [What is an index?](#what-is-an-index)
+    - [What are aggregate functions?](#what-are-aggregate-functions)
+    - [What is normalization in SQL?](#what-is-normalization-in-sql)
   - [Practical Questions](#practical-questions)
 
 ## Theoretical Questions
@@ -73,10 +78,12 @@
 ##### LEFT JOIN
 - all rows of the left table and matching rows of the right table
 
-![Left Join](../sources/left_join.jpg "LEFT JOIN")
+![LEFT JOIN](../sources/left_join.jpg "LEFT JOIN")
 
 ##### RIGHT JOIN
 - all rows of the right table and matching rows of the left table
+
+![RIGHT JOIN](../sources/right_join.jpg "RIGHT JOIN")
 
 ##### FULL OUTER JOIN
 - all rows of both tables
@@ -89,5 +96,41 @@ A FULL OUTER JOIN B
 ON A.key = B.key
 WHERE A.key IS NULL or B.key IS NULL;
 ```
+
+### What is a subquery?
+
+- Query nested inside another query
+- Typically used to return a single value, set of values or table to use in outer query
+- Can be used in SELECT, WHERE, FROM, HAVING
+
+### Difference between UNION and UNION ALL?
+
+- UNION:
+  - Combines two or more queries and removes duplicates
+- UNION ALL
+  - Combines two or more queries and does not remove duplicates
+  - Can improve performance
+
+### What is an index?
+
+- Database object that improves speed of data retrieval operations (quick access to rows)
+- Created on columns that are frequently searched or used in JOINs
+- Can slow down data insertion, updating and deletion
+
+### What are aggregate functions?
+
+- Perform calculations on a set of values
+- Examples:
+  - COUNT &rarr; number of rows
+  - SUM &rarr; sum of numeric values
+  - AVG &rarr; average of numeric values
+  - MIN &rarr; smallest value
+  - MAX &rarr; largest value
+
+### What is normalization in SQL?
+
+- Organizing data in database to reduce redundancy and improve data integrity
+- Involves dividing large tables into smaller, more manageable tables and defining relationships between them
+- Goal: Efficient data storage with low duplication and inconsistencies
 
 ## Practical Questions
