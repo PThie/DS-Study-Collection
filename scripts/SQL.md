@@ -1,6 +1,25 @@
 # SQL
 
-## Order of Execution
+## Theoretical Questions
+
+- [What is SQL?](#what-is-sql)
+
+### What is SQL?
+
+- SQL = Structured Query Language
+- Used for managing and manipulating relational databases
+- Used for querying, updating, inserting and deleting data and managing database schemas and permissions
+
+### What is a primary key?
+
+- Column (set of columns) that uniquely identifies each row in the table
+- Must contain unique values
+- Cannot contain NULL
+- One primary key per table
+
+###
+
+### Order of Execution
 
 1. FROM and JOINs
     - determine the data of interest
